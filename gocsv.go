@@ -1,3 +1,47 @@
+// package main
+
+// import (
+// 	"encoding/csv"
+// 	"fmt"
+// 	"io"
+// 	"strings"
+// )
+
+// type CSV struct {
+// 	File       io.Reader
+// 	SkipHeader bool
+// }
+
+// const RawData = `user_id,first_name,last_name,coolness_pct,is_cool
+// 1,"Rob","Pike",0.9,true
+// 2,Ken,Thompson,0.8,true
+// 3,"Robert",,0.4,false
+// `
+
+// type User struct {
+// 	ID          int     `csv:"user_id"`
+// 	FirstName   string  `csv:"first_name"`
+// 	LastName    string  `csv:"last_name,omitempty"`
+// 	CoolnessPct float32 `csv:"coolness_pct"`
+// 	IsCool      bool    `csv:"is_cool"`
+// }
+
+// func main() {
+// 	r := csv.NewReader(strings.NewReader(RawData))
+
+// 	for {
+// 		record, err := r.Read()
+// 		if err == io.EOF {
+// 			break
+// 		}
+// 		if err != nil {
+// 			panic(err)
+// 		}
+
+// 		fmt.Println(record)
+// 	}
+// }
+
 package main
 
 import (
